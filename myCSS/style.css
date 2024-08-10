@@ -1,0 +1,132 @@
+header {
+    height: 50%;
+    text-align: center;
+    color: #faebd7;
+    margin: 20px;
+    padding: 40px;
+
+   
+}
+
+.form_bg
+{
+height: 100vh;
+display: flex;
+align-items: center;
+
+}
+.form-horizontal
+{
+    font-family:sans-serif;
+    text-align: center;
+
+    width: 50%;
+   
+    margin: auto;
+    padding: auto;
+    left: 50px;
+  
+    
+}
+
+.form-horizontal .form_icon
+{
+    color:green;
+    font-size: 80px;
+    line-height: 85px;
+    margin: 0 0 5px;
+}
+.form-horizontal .title
+{
+    color:green;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 35px 0;
+}
+.form-horizontal .form-group
+{
+    margin:0 0 10px ;
+    position: relative;
+    color: white;
+    width:100%;
+}
+.form-horizontal .input-icon
+{
+   position: absolute;
+   left: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 16px;
+   color:green; 
+}
+.form-horizontal .form-control
+{
+  color:green;
+  background-color:beige;
+  font-size: 13px;
+  letter-spacing: 1px;
+  height: 40px;
+  padding: 2px 15px 2px 35px;
+  border: none;
+  border-radius: 50px;
+}
+
+.form-horizontal .form-control::placeholder
+{
+    color:green;
+    font-size: 14px;
+    text-transform: capitalize;
+
+}
+.form-horizontal .btn
+{
+    color:beige;
+    background-color:green;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.form-horizontal .form-options li a
+{
+    color:green;
+    letter-spacing:0.5px ;
+    margin: 0 0 10px;
+    display: block;
+}
+.form-horizontal .form-options
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.form-horizontal .form-options li a i
+{
+    font-size: 12px;
+}
+.lock
+{
+    color:green;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 35px 0;
+}
+section
+{
+    margin-top: 200px;
+}
+thead
+{
+    background-color: green;
+    color: bisque;
+    text-align: center;
+}

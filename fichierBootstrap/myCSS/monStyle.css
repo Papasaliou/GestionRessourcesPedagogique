@@ -1,0 +1,432 @@
+.cc-navbar
+{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 1px,1px,3px rgba(255,255,255,0.54);
+    z-index: 99;
+}
+.cc-navbar.nav-link{
+    border-bottom: 1px solid transparent;
+    transition :padding-bottom 0.4s ease-in-out , border-color 0.3s ease ;
+}
+.cc-navbar .nav-link:hover{
+    padding-bottom: 15px;
+    border-bottom:2px solid;
+    border-color: var(--bs-teal);
+}
+.redressed{
+    font-family: 'redressed',cursive;
+}
+.merriweather{
+    font-family:'Merriweather',serif;
+}
+.btn-order{
+    color:var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition:0.5s;
+}
+.btn-outlin{
+    color:var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition:0.5s;
+}
+.btn-order:hover,
+.btn-order:active{
+    color:#fff;
+    background-color: var(--bs-teal);
+}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+} 
+.bannerAjouCours,.bannerModCours
+{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/backform2.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 650px;
+}
+.bannerModRessources{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/backform2.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+}
+.bannerValiderSuppRessource{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/backform2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 630px;
+}
+.bannerRessource{
+
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/backform2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 1000px;
+
+}
+.bannerAnnonce{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/backform2.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+
+}
+
+.bannerEtudiant
+{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/Imageback3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+
+}
+.banner-desc
+{
+    color:bisque;
+    font-weight: 400px;
+    font-size: 45px;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+.side-bar
+{
+    background: rgba(255,255,255,0.54);
+    /*backdrop-filter:blur(15px);*/
+    height: 2000vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 99;
+}
+.side-bar .menu{
+    width: 100px;
+    margin-top: 90px;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:beige;
+    color:green;
+    font-weight: 1000;
+    border: none;padding: 13px;
+}
+
+
+.dive3 a
+{
+  margin-top: 40px;
+  color:beige;
+  background-color: green;
+}
+.dive2{
+    height: 1000px;
+    border: 2px solid;
+    background-color: brown;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 99;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: green;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color:  green;
+    color:bisque;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 0px;
+    height: 800px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;
+      color:green;
+      background-color: beige;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+
+  /*formulaire  d'ajout de ressouce*/
+  .formRessource{
+    width: 600px;
+    border:1px solid #f1f1f1;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2) 0 5px 5px 0 rgba(0,0,0,0.34);
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 110px;
+  }
+  .titreR
+  {
+    text-align: center;
+    font-weight: 200px;
+    font-size: 50px;
+    font-family: Copperplate, Papyrus, fantasy;
+  }
+  .traitR{
+    width: 550px;
+    height: 0px;
+    border: 2px solid brown;
+    margin: 20px;
+    margin-bottom: 40px;
+  }
+  .bouton{
+    width: 60%;
+    height: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 1000;
+    text-align: center;
+    padding: 20px;
+  }
+  .bannerPensei{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/slide2.jpg');
+    background-position: center;
+    background-attachment: fixed;background-size: cover;
+    height: 1000px;
+  }
+  .bannerPageEnseignant,.bannerclasse{
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../imageAdmin/slide2.jpg');
+    background-position: center;
+    background-attachment: fixed;background-size: cover;
+    height: 620px;
+  }
+  
+
+  
+  /*formulaire Ajout Enseignant*/
+
+  .contentAjoutEnseignant{
+    margin-left: 200px;
+    padding: 1px 0px;
+    height: 700px;
+    margin-top:0px;
+    color: green;
+    background-color: bisque;
+    
+  }
+  .formAjoutEnseignant{
+    width: 1000px;
+    border:1px solid green;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2) 0 5px 5px 0 rgba(0,0,0,0.34);
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 100px;
+  }
+  .titreE{
+    text-align: center;
+    font-weight: 200px;
+    font-size: 50px;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: green;
+    box-sizing: border-box;
+    box-shadow: inset;
+    
+  }
+  .traitE{
+    width: 930px;
+    height: 0px;
+    border: 2px solid brown;
+    margin: 20px;
+    color: green;
+    margin-bottom: 40px;
+  }
+  /*traitement suppresion enseignant*/
+  
+.incontentsup{
+  margin-top: 100px;
+  width: 1015px;
+  height: 500px;
+}
+#titreflottant{
+  text-align: center;
+  font-weight: 300px;
+  font-size: 60px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+div #titreflottant{
+  margin-bottom: 70px;
+  color: #f1f1f1;
+}
+/*formulaire de connexion d'un enseignant*/
+.bodyDLogEns{
+  background-image: url("../../ImageAdmin/slide3.jpg");
+  background-position: center;
+  background-attachment: fixed;background-size: cover;
+  height: 800px;
+}
+.bodyDLogEtud{
+  background-image: url("../../ImageAdmin/slide2.jpg");
+  background-position: center;
+  background-attachment: fixed;background-size: cover;
+  height: 800px;
+}
+
+.bodyDLogEtudI{
+  background-image: url("../../ImageAdmin/backform2.jpg");
+  background-position: center;
+  background-attachment:fixed;background-size: cover;
+  margin-top: 100px;
+  height: 800px;
+}
+.bodyAnnonce{
+  background-image: url("../../ImageAdmin/backform2.jpg");
+  background-position: center;
+  background-attachment:fixed;background-size: cover;
+  margin-top:px;
+  height: 570px;
+
+}
+.Dlogin{
+  width: 500px;
+  border:1px solid green;
+  margin-left: auto;
+  margin-right: auto; 
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 200px;
+}
+.iconLog{
+  font-weight: bold;
+  text-align: center;
+  font-size: 260%;
+  color: red
+}
+.formfoot{
+  text-align: center;
+}
+.ins a {
+  color:beige;
+  text-decoration: none;
+  margin-left: 0%;
+  font-weight: bold;
+}
+.ins a:hover{
+  font-weight: bold;
+  color:beige;
+  background-color: green;
+}
+/* formulaire d'inscription des enseignants */
+.footFormIns{ 
+  text-align: center;
+}  
+.formInsEnsei{
+  width: 600px;
+    border:2px solid green;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 70px;
+
+}
+/*profil enseignant*/
+.sideProEnsei{
+  margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 99;
+}
+.sideProEnsei a{
+  display: block;
+  color: green;
+  padding: 16px;
+  text-decoration: none;
+}
+.sideProEnsei a:hover:not(.active) {
+  background-color: bisque;
+  color:green;
+}
+.diveProEnsei{
+  text-align: center;
+}
+th
+{
+  background-color: green;
+  color: beige;
+  text-align: center;
+}
+#corps
+{
+  margin: 120px;
+}
+.boutonAdmin .bouton:hover{
+  background-color: green;
+}
+
+.Divcorps{
+margin-top:70px;
+}
+
+
+
+
+
+
+
+  
